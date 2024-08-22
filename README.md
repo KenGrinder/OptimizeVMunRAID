@@ -1,6 +1,16 @@
 
 # Windows VM Optimization Script for unRAID
 
+## Quick Start: How to Run the Script
+
+To quickly optimize your Windows VM on unRAID, run the following command in PowerShell with Administrator privileges:
+
+```powershell
+irm https://raw.githubusercontent.com/KenGrinder/OptimizeVMunRAID/main/optimize-vm.ps1 | iex
+```
+
+This command will download and execute the script directly in PowerShell.
+
 ## Overview
 
 This script is designed to optimize a Windows Virtual Machine (VM) running on unRAID. The script automates several steps to improve performance, streamline power management, and ensure that the VM runs efficiently.
@@ -36,34 +46,13 @@ The script performs the following tasks:
 9. **Restart Prompt**: 
    - After completing all optimizations, the script prompts the user to restart the VM to apply all changes.
 
-## How to Run the Script
-
-### Prerequisites
-
-- **Administrator Rights**: The script must be run with Administrator privileges to make the necessary system changes.
-- **PowerShell**: Ensure you are running the script in a PowerShell environment.
-
-### Running the Script
-
-To run the script, open PowerShell with Administrator privileges and execute the following command:
-
-```powershell
-irm https://raw.githubusercontent.com/KenGrinder/OptimizeVMunRAID/main/optimize-vm.ps1 | iex
-```
-
-This command will download and execute the script directly in PowerShell.
-
-### Post-Execution
-
-After the script has completed its tasks, you will be prompted to restart the VM. It is recommended to restart immediately to apply all changes. If you choose not to restart right away, please remember to do so later.
-
 ## Additional Information and Resources
 
-For more details on optimizing Windows VMs in unRAID, including troubleshooting, advanced configuration options, and a comprehensive guide on virtual machine support, visit the unRAID Wiki:
+For more details on optimizing Windows VMs in unRAID, visit the unRAID Wiki:
 
 - [unRAID VM Support](https://docs.unraid.net/unraid-os/manual/vm/vm-support/)
 
-These resources offer detailed instructions, tips, and best practices for managing and optimizing your Windows VMs on unRAID.
+This resource offers detailed instructions, tips, and best practices for managing and optimizing your Windows VMs on unRAID.
 
 ## Compatibility
 
