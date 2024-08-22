@@ -1,3 +1,4 @@
+
 # Windows VM Optimization Script for unRAID
 
 ## Overview
@@ -48,3 +49,33 @@ To run the script, open PowerShell with Administrator privileges and execute the
 
 ```powershell
 irm https://raw.githubusercontent.com/KenGrinder/OptimizeVMunRAID/main/optimize-vm.ps1 | iex
+```
+
+This command will download and execute the script directly in PowerShell.
+
+### Post-Execution
+
+After the script has completed its tasks, you will be prompted to restart the VM. It is recommended to restart immediately to apply all changes. If you choose not to restart right away, please remember to do so later.
+
+## Additional Information and Resources
+
+For more details on optimizing Windows VMs in unRAID, including troubleshooting, advanced configuration options, and a comprehensive guide on virtual machine support, visit the unRAID Wiki:
+
+- [unRAID VM Support](https://docs.unraid.net/unraid-os/manual/vm/vm-support/)
+- [VirtIO Drivers and Windows VM Setup](https://docs.unraid.net/unraid-os/manual/vm/virtio-drivers/)
+- [Performance Tuning for Windows VMs](https://docs.unraid.net/unraid-os/manual/vm/performance-tuning/)
+
+These resources offer detailed instructions, tips, and best practices for managing and optimizing your Windows VMs on unRAID.
+
+## Compatibility
+
+The script is compatible with the following Windows versions running as VMs on unRAID:
+
+- Windows 7, 8.1, 10, 11
+- Windows Server 2008 R2, 2012 R2, 2016, 2019, 2022
+
+Please note that specific optimizations may vary depending on the Windows version and your specific VM configuration.
+
+## License
+
+This script is provided under the MIT License. You are free to use, modify, and distribute it as needed.
