@@ -7,7 +7,7 @@ function Safe-Execute {
     try {
         Invoke-Expression $Command
     } catch {
-        Write-Error "$ErrorMessage: $_"
+        Write-Error "${ErrorMessage}: $_"
     }
 }
 
@@ -20,12 +20,12 @@ function Backup-RegistryKey {
     try {
         if (Test-Path $KeyPath) {
             Export-RegistryKey -Path $KeyPath -LiteralPath $BackupPath -ErrorAction Stop
-            Write-Host "Backup of $KeyPath saved to $BackupPath."
+            Write-Host "Backup of ${KeyPath} saved to ${BackupPath}."
         } else {
-            Write-Host "Registry key $KeyPath does not exist. No backup needed."
+            Write-Host "Registry key ${KeyPath} does not exist. No backup needed."
         }
     } catch {
-        Write-Error "Failed to backup $KeyPath: $_"
+        Write-Error "Failed to backup ${KeyPath}: $_"
     }
 }
 
