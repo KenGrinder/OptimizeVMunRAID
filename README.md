@@ -62,8 +62,6 @@ After the script has completed its tasks, you will be prompted to restart the VM
 For more details on optimizing Windows VMs in unRAID, including troubleshooting, advanced configuration options, and a comprehensive guide on virtual machine support, visit the unRAID Wiki:
 
 - [unRAID VM Support](https://docs.unraid.net/unraid-os/manual/vm/vm-support/)
-- [VirtIO Drivers and Windows VM Setup](https://docs.unraid.net/unraid-os/manual/vm/virtio-drivers/)
-- [Performance Tuning for Windows VMs](https://docs.unraid.net/unraid-os/manual/vm/performance-tuning/)
 
 These resources offer detailed instructions, tips, and best practices for managing and optimizing your Windows VMs on unRAID.
 
