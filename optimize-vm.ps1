@@ -7,7 +7,7 @@ function Safe-Execute {
     try {
         Invoke-Expression $Command
     } catch {
-        Write-Error "${ErrorMessage}: $_"
+        Write-Error "${ErrorMessage}: $($_)"
     }
 }
 
@@ -25,7 +25,7 @@ function Backup-RegistryKey {
             Write-Host "Registry key ${KeyPath} does not exist. No backup needed."
         }
     } catch {
-        Write-Error "Failed to backup ${KeyPath}: $_"
+        Write-Error "Failed to backup ${KeyPath}: $($_)"
     }
 }
 
@@ -64,7 +64,7 @@ try {
     Set-Service "WSearch" -StartupType Disabled -ErrorAction Stop
     Write-Host "Windows Search service disabled."
 } catch {
-    Write-Error "Failed to disable Windows Indexing service: $_"
+    Write-Error "Failed to disable Windows Indexing service: $($_)"
 }
 
 # Step 6: Disable Automatic Disk Defragmenting
@@ -83,7 +83,7 @@ try {
         Write-Error "High Performance Power Mode not found."
     }
 } catch {
-    Write-Error "Failed to enable High Performance Power Mode: $_"
+    Write-Error "Failed to enable High Performance Power Mode: $($_)"
 }
 
 Write-Host "VM Optimization Complete!"
